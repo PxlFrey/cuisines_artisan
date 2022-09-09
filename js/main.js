@@ -12,7 +12,29 @@ $(function() {
     e.preventDefault();
   });
 
-  // Page contact
+  // SLIDER
+
+  $('.slider-container').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    arrows: false,
+    infinite: true,
+    
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+        }
+      }
+    ]
+  });
+
+  // PAGE CONTACT
       
   var theForm = document.getElementById( 'theForm' );
   
@@ -32,11 +54,11 @@ $(function() {
       messageEl.innerHTML = 'Merci ! Je vous réponds au plus vite.';
       classie.addClass( messageEl, 'show' );
     }
-  } );
+  });
 
-  // Filtrer les prestations
+  // FILTRER LES PRESTATIONS
 
-      $('.filtres a').click(function(e) {
+  $('.filtres a').click(function(e) {
         $('.filtres a').removeClass('active');
         $(this).addClass('active');
         var href = $(this).attr('href');
@@ -49,7 +71,7 @@ $(function() {
             $('.projet[data-filtre="' + filtre + '"]').show();
         }
         e.preventDefault();
-    });
+  });
 
 
 });
