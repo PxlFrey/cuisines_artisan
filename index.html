@@ -9,7 +9,8 @@
   <link rel="icon" type="image/png" href="img/favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="style.css">
@@ -228,7 +229,7 @@
           <p>Imaginez un monde où vous pourrez laisser libre court à votre imagination, encadré par un professionnel qui mettra en forme votre inspiration… La chaleur du bois, les senteurs de la patine, c’est cette perspective féérique que vous proposent de découvrir les Cuisines et Salles de Bains de l’Artisan.</p>
           <p>De l’étude à la pose, M. Franck Belin sera votre seul interlocuteur sans aucun intermédiaire et s’assurera que l’aménagement de votre intérieur soit une réussite.
           Située sur Bouillargues, près de Nîmes,  Les Cuisines de l’Artisan vous proposent depuis plus de 30 ans la conception et la réalisation de votre cuisine, salle de bains ou dressing sur mesure.</p>
-          <p>Contactez-nous au 06.62.37.51.04 afin de nous faire part de votre projet et établir ensemble une étude personnalisée gratuite.
+          <p>Contactez-nous au 06.62.37.51.04 afin de nous faire pprovence de votre projet et établir ensemble une étude personnalisée gratuite.
           Soyez surpris par notre rapport qualité/prix !</p>
         <a href="#" class="btn">En savoir plus</a>
       </div>
@@ -242,28 +243,76 @@
 
   <section id="prestations" >
 
-  <h2>Découvrez nos prestations de cuisines, salles de bains et dressings</h2>
-  <div class="section-flex-content">
+    <h1>Découvrez nos prestations de cuisines, salles de bains et dressings</h1>
 
-    <div class="section-p flex-col">
+    <div class="section-flex-content">
+
+      <div class="section-p flex-col">
         <p>Décorateur, Franck Belin prend en charge l’intégralité de votre projet, vous conseillant sur le choix des modèles, les essences de bois, les couleurs… pouvant même aller jusqu’à harmoniser votre projet avec vos sols, plafond et peinture</p>
         <a href="#" class="btn">En savoir plus</a>
+      </div>
+
     </div>
 
-  </div>
+    <!--GRID PRESTATIONS--> 
+    <div class="grid-container flex-col">
 
-  <div class="grid-container">
+      <div class="filtres">
+          <a class="active" href="#all">Tous</a>
+          <a href="#contemp">Cuisines contemporaines</a>
+          <a href="#modern">Cuisines modernes</a>
+          <a href="#provence">Cuisines provençales</a>
+          <a href="#sdb">Salles de bains</a>
+          <a href="#dressing">Dressings</a>
+      </div>
 
-    <div class="grid-item" style="background: url('img/grid/1.jpg') center no-repeat; background-size: cover;"></div>
-    <div class="grid-item" style="background: url('img/grid/2.jpg') center no-repeat; background-size: cover;"></div>
-    <div class="grid-item" style="background: url('img/grid/3.jpg') center no-repeat; background-size: cover;"></div>
-    <div class="grid-item" style="background: url('img/grid/4.jpg') center no-repeat; background-size: cover;"></div>
-    <div class="grid-item" style="background: url('img/grid/5.jpg') center no-repeat; background-size: cover;"></div>
-    <div class="grid-item" style="background: url('img/grid/6.jpg') center no-repeat; background-size: cover;"></div>
-    <div class="grid-item" style="background: url('img/grid/7.jpg') center no-repeat; background-size: cover;"></div>
-    <div class="grid-item" style="background: url('img/grid/8.jpg') center no-repeat; background-size: cover;"></div>
-   
-  </div>
+      <div class="grid">
+        <a data-filtre="contemp" data-fancybox="contemp" data-caption="NIMES -Juillet 2022-" href="/img/prestations/1.jpg" class="projet">
+          <div class="projet-nom">NIMES -Juillet 2022-</div>
+          <img src="/img/prestations/1.jpg">
+        </a>
+        <a data-filtre="modern" data-fancybox="modern" data-caption="BAGNOLS SUR CEZE -Avril 2022-" href="/img/prestations/2.jpg" class="projet">
+          <div class="projet-nom">BAGNOLS SUR CEZE -Avril 2022-</div>
+          <img src="/img/prestations/2.jpg">
+        </a>
+        <a data-filtre="provence" data-fancybox="provence" data-caption="MAUGUIO -Janvier 2022-" href="/img/prestations/3.jpg" class="projet">
+          <div class="projet-nom">MAUGUIO -Janvier 2022-</div>
+          <img src="/img/prestations/3.jpg">
+        </a>
+        <a data-filtre="sdb" data-fancybox="sdb" data-caption="LE GRAU DU ROI -Mars 2022-" href="/img/prestations/4.jpg" class="projet">
+          <div class="projet-nom">LE GRAU DU ROI -Mars 2022-</div>
+          <img src="/img/prestations/4.jpg">
+        </a>
+        <a data-filtre="dressing" data-fancybox="dressing" data-caption="LE GRAU DU ROI -Mars 2022-" href="/img/prestations/5.jpg" class="projet">
+          <div class="projet-nom">GENERAC -MAI 2022-</div>
+          <img src="/img/prestations/5.jpg">
+        </a>
+        <a data-filtre="sdb" data-fancybox="sdb" data-caption="LE GRAU DU ROI -Mars 2022-" href="/img/prestations/6.jpg" class="projet">
+          <div class="projet-nom">GENERAC -MAI 2022-</div>
+          <img src="/img/prestations/6.jpg">
+        </a>
+        <a data-filtre="sdb" data-fancybox="sdb" data-caption="LE GRAU DU ROI -Mars 2022-" href="/img/prestations/7.jpg" class="projet">
+          <div class="projet-nom">GENERAC -MAI 2022-</div>
+          <img src="/img/prestations/7.jpg">
+        </a>
+        <a data-filtre="sdb" data-fancybox="sdb" data-caption="LE GRAU DU ROI -Mars 2022-" href="/img/prestations/8.jpg" class="projet">
+          <div class="projet-nom">GENERAC -MAI 2022-</div>
+          <img src="/img/prestations/8.jpg">
+        </a>
+        <a data-filtre="contemp" data-fancybox="contemp" data-caption="LE GRAU DU ROI -Mars 2022-" href="/img/prestations/9.jpg" class="projet">
+          <div class="projet-nom">GENERAC -MAI 2022-</div>
+          <img src="/img/prestations/9.jpg">
+        </a>
+        <a data-filtre="contemp" data-fancybox="contemp" data-caption="LE GRAU DU ROI -Mars 2022-" href="/img/prestations/10.jpg" class="projet">
+          <div class="projet-nom">GENERAC -MAI 2022-</div>
+          <img src="/img/prestations/10.jpg">
+        </a>
+
+
+
+      </div>
+
+    </div>
 
   </section>
 
@@ -297,7 +346,7 @@
 
   <section id="summary">
 
-  <h2>Les cuisines de l’artisan, vous attendent pour vous faire découvrir son savoir-faire</h2>
+  <h2>Les cuisines de l’provenceisan, vous attendent pour vous faire découvrir son savoir-faire</h2>
 
   <div class="section-flex-content">
 
@@ -495,7 +544,7 @@
   </footer>
   
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="js/modernizr.custom.js"></script>
   <script src="js/classie.js"></script>
   <script src="js/stepsForm.js"></script>

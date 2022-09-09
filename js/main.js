@@ -34,4 +34,22 @@ $(function() {
     }
   } );
 
+  // Filtrer les prestations
+
+      $('.filtres a').click(function(e) {
+        $('.filtres a').removeClass('active');
+        $(this).addClass('active');
+        var href = $(this).attr('href');
+        var filtre = href.substring(1, href.length);
+        //alert(filtre);
+        $('.projet').hide();
+        if(filtre == 'all') {
+            $('.projet').show();
+        } else {
+            $('.projet[data-filtre="' + filtre + '"]').show();
+        }
+        e.preventDefault();
+    });
+
+
 });
